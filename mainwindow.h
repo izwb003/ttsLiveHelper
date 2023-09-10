@@ -15,6 +15,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+signals:
+    void do_MainWindow_Loaded();
+
+private slots:
+    void do_MainWindow_AfterShow();
+
 private:
     Ui::MainWindow *ui;
 };

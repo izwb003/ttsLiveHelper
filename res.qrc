@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>res/icons/icon32.ico</file>
+        <file>res/icons/icon64.ico</file>
+    </qresource>
+    <qresource prefix="/StartWindow">
+        <file>res/StartWindow/StartWindowPic.jpg</file>
+    </qresource>
+</RCC>
