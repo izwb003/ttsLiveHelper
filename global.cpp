@@ -2,6 +2,7 @@
 
 #include <QCoreApplication>
 #include <QElapsedTimer>
+#include <QTimer>
 
 //Basic Function
 
@@ -11,8 +12,7 @@
  */
 void waitSec(int s)
 {
-    QElapsedTimer t;
-    t.start();
-    while(t.elapsed()<1000*s)
-        QCoreApplication::processEvents();
+    QEventLoop loop;
+    QTimer::singleShot(s*1000, &loop, SLOT(quit()));
+    loop.exec();
 }

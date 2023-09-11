@@ -1,6 +1,5 @@
 #include "startwindow.h"
 #include "ui_startwindow.h"
-#include "mainwindow.h"
 
 #include "global.h"
 
@@ -11,8 +10,6 @@
 #include <QPainterPath>
 #include <QProcess>
 #include <QSettings>
-
-#include <Windows.h>
 
 StartWindow::StartWindow(QWidget *parent) :
     QWidget(parent),

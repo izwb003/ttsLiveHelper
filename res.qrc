@@ -6,4 +6,12 @@
     <qresource prefix="/StartWindow">
         <file>res/StartWindow/StartWindowPic.jpg</file>
     </qresource>
+    <qresource prefix="/MainWindow/Actions">
+        <file>res/MainWindow/Actions/stop-streaming.ico</file>
+        <file>res/MainWindow/Actions/stop-video-stream.ico</file>
+        <file>res/MainWindow/Actions/streaming.ico</file>
+        <file>res/MainWindow/Actions/video-stream.ico</file>
+        <file>res/MainWindow/Actions/pause.ico</file>
+        <file>res/MainWindow/Actions/play.ico</file>
+    </qresource>
 </RCC>
