@@ -1,8 +1,0 @@
-H:/LiveHelper/LiveHelper/SettingsPage/build-SettingsPage-Desktop_Qt_6_5_2_MSVC2019_64bit-Release/CMakeFiles/SettingsPage.dir
-H:/LiveHelper/LiveHelper/SettingsPage/build-SettingsPage-Desktop_Qt_6_5_2_MSVC2019_64bit-Release/CMakeFiles/edit_cache.dir
-H:/LiveHelper/LiveHelper/SettingsPage/build-SettingsPage-Desktop_Qt_6_5_2_MSVC2019_64bit-Release/CMakeFiles/rebuild_cache.dir
-H:/LiveHelper/LiveHelper/SettingsPage/build-SettingsPage-Desktop_Qt_6_5_2_MSVC2019_64bit-Release/CMakeFiles/list_install_components.dir
-H:/LiveHelper/LiveHelper/SettingsPage/build-SettingsPage-Desktop_Qt_6_5_2_MSVC2019_64bit-Release/CMakeFiles/install.dir
-H:/LiveHelper/LiveHelper/SettingsPage/build-SettingsPage-Desktop_Qt_6_5_2_MSVC2019_64bit-Release/CMakeFiles/install/local.dir
-H:/LiveHelper/LiveHelper/SettingsPage/build-SettingsPage-Desktop_Qt_6_5_2_MSVC2019_64bit-Release/CMakeFiles/SettingsPage_autogen_timestamp_deps.dir
-H:/LiveHelper/LiveHelper/SettingsPage/build-SettingsPage-Desktop_Qt_6_5_2_MSVC2019_64bit-Release/CMakeFiles/SettingsPage_autogen.dir
