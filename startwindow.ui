@@ -227,6 +227,35 @@
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="labelVersionInfo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>651</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>版本 构建于</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelEasterEggInfo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>651</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
  </widget>
  <resources>
   <include location="res.qrc"/>

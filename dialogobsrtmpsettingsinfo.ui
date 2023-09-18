@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogOBSRTMPSettingsInfo</class>
+ <widget class="QDialog" name="DialogOBSRTMPSettingsInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>782</width>
+    <height>264</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OBS推流设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icons/res/icons/icon32.ico</normaloff>:/icons/res/icons/icon32.ico</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="labelOBSSettingNotice">
+     <property name="text">
+      <string>请按如下信息设置您的OBS推流：</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayoutInfo" stretch="1,1,1,1">
+     <item>
+      <widget class="QLabel" name="labelRTMPAddressNotice">
+       <property name="text">
+        <string>服务器地址：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayoutRTMPAddress">
+       <item>
+        <widget class="QLineEdit" name="lineEditRTMPAddress"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonRTMPAddressCopy">
+         <property name="text">
+          <string>复制</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelRTMPPasswordNotice">
+       <property name="text">
+        <string>串流密钥：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayoutRTMPPassword">
+       <item>
+        <widget class="QLineEdit" name="lineEditRTMPPassword"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonRTMPPasswordCopy">
+         <property name="text">
+          <string>复制</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutButtons">
+     <item>
+      <spacer name="horizontalSpacerButtons">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonOBSAuto">
+       <property name="text">
+        <string>自动设置至OBS</string>
+       </property>
+       <property name="icon">
+        <iconset resource="res.qrc">
+         <normaloff>:/icons/res/icons/obs-studio.ico</normaloff>:/icons/res/icons/obs-studio.ico</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonOK">
+       <property name="text">
+        <string>OK</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButtonOK</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogOBSRTMPSettingsInfo</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>731</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>390</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

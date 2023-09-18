@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>639</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>设置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icons/res/settings.ico</normaloff>:/icons/res/settings.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidgetTab">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabExecute">
+       <attribute name="title">
+        <string>运行</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutBLiveChat" stretch="1,3,1">
+          <item>
+           <widget class="QLabel" name="labelBLiveChatPath">
+            <property name="text">
+             <string>BLiveChat路径：</string>
+            </property>
+            <property name="buddy">
+             <cstring>lineEditBLiveChatPath</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditBLiveChatPath"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonBrowseBLiveChat">
+            <property name="text">
+             <string>浏览</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutDanmuji" stretch="1,3,1">
+          <item>
+           <widget class="QLabel" name="labelDanmujiURL">
+            <property name="text">
+             <string>弹幕姬URL：</string>
+            </property>
+            <property name="buddy">
+             <cstring>lineEditDanmujiURL</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditDanmujiURL"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonBrowseDanmuji">
+            <property name="text">
+             <string>浏览</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutOBS" stretch="1,3,1">
+          <item>
+           <widget class="QLabel" name="labelOBSURL">
+            <property name="text">
+             <string>OBS URL：</string>
+            </property>
+            <property name="buddy">
+             <cstring>lineEditOBSURL</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditOBSURL"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonBrowseOBS">
+            <property name="text">
+             <string>浏览</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="lineExecute1">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBoxOnStartUp">
+          <property name="title">
+           <string>启动时运行...</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QCheckBox" name="checkBoxStartUpBLiveChat">
+             <property name="text">
+              <string>BLiveChat</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBoxStartUpDanmuji">
+             <property name="text">
+              <string>弹幕姬</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBoxStartUpOBS">
+             <property name="text">
+              <string>OBS</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBoxOnExit">
+          <property name="title">
+           <string>退出时一并关闭...</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QCheckBox" name="checkBoxOnCloseBLiveChat">
+             <property name="text">
+              <string>BLiveChat</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBoxOnCloseDanmuji">
+             <property name="text">
+              <string>弹幕姬</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="checkBoxOnCloseOBS">
+             <property name="text">
+              <string>OBS</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacerExecute">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabOperate">
+       <attribute name="title">
+        <string>控制与操作</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutOBSWebSocket" stretch="1,2">
+          <item>
+           <widget class="QLabel" name="labelOBSWebSocketLink">
+            <property name="text">
+             <string>OBS WebSocket管理链接：</string>
+            </property>
+            <property name="buddy">
+             <cstring>lineEditOBSWebSocketLink</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditOBSWebSocketLink"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutManagerWebSocket" stretch="1,2">
+          <item>
+           <widget class="QLabel" name="labelManagerWebSocketLink">
+            <property name="text">
+             <string>房管远程WebSocket管理链接：</string>
+            </property>
+            <property name="buddy">
+             <cstring>lineEditManagerWebSocketLink</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditManagerWebSocketLink"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutBLiveChatManage" stretch="1,2">
+          <item>
+           <widget class="QLabel" name="labelBLiveChatManage">
+            <property name="text">
+             <string>BLiveChat配置页地址：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditBLiveChatManage"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacerOperate">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelOperateNotice">
+          <property name="palette">
+           <palette>
+            <active>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </active>
+            <inactive>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </inactive>
+            <disabled/>
+           </palette>
+          </property>
+          <property name="text">
+           <string>*请注意：以上配置请您在您的房管的指导下完成设置，并请不要自行修改（包括自行修改OBS的WebSocket服务器配置）。错误的设置可能会造成控制功能失效。若要停用房管远程请在主界面进行修改。如有任何问题请与您的房管联系。</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabBilibili">
+       <attribute name="title">
+        <string>B站数据交互</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutRoomId" stretch="2,3">
+          <item>
+           <widget class="QLabel" name="labelRoomId">
+            <property name="text">
+             <string>您的直播间房间号：</string>
+            </property>
+            <property name="buddy">
+             <cstring>lineEditRoomId</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditRoomId"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutTargetArea" stretch="2,3">
+          <item>
+           <widget class="QLabel" name="labelTargetArea">
+            <property name="text">
+             <string>您要开播的目标分区v2编号(area_v2)：</string>
+            </property>
+            <property name="buddy">
+             <cstring>lineEditTargetArea</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditTargetArea"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutCSRF" stretch="2,3">
+          <item>
+           <widget class="QLabel" name="labelCSRF">
+            <property name="text">
+             <string>Cookie csrf(bili_jct)值：</string>
+            </property>
+            <property name="buddy">
+             <cstring>lineEditCSRF</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditCSRF"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutSESSDATA" stretch="2,3">
+          <item>
+           <widget class="QLabel" name="labelSESSDATA">
+            <property name="text">
+             <string>Cookie SESSDATA值：</string>
+            </property>
+            <property name="buddy">
+             <cstring>plainTextEditSESSDATA</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPlainTextEdit" name="plainTextEditSESSDATA"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacerBilibili1">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelBilibiliNotice">
+          <property name="palette">
+           <palette>
+            <active>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </active>
+            <inactive>
+             <colorrole role="WindowText">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>255</red>
+                <green>0</green>
+                <blue>0</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </inactive>
+            <disabled/>
+           </palette>
+          </property>
+          <property name="text">
+           <string>*请注意：以上配置请您在您的房管的指导下完成设置，并请不要自行修改。另特别注意：Cookie值泄露有很大的安全风险！！！请务必注意保密。如有任何问题（如想切换分区知道编号等）请与您的房管联系。</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabLive">
+       <attribute name="title">
+        <string>直播设定</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QGroupBox" name="groupBoxFastSettings">
+          <property name="title">
+           <string>“现在在播”标签的快速设置</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="groupBoxButton1">
+             <property name="title">
+              <string>按钮1</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayoutButton1Label">
+                <item>
+                 <widget class="QLabel" name="labelButton1Label">
+                  <property name="text">
+                   <string>标签：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditButton1Label"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayoutButton1Text">
+                <item>
+                 <widget class="QLabel" name="labelButton1Text">
+                  <property name="text">
+                   <string>内容：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditButton1Text"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QGroupBox" name="groupBoxButton2">
+             <property name="title">
+              <string>按钮2</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayoutButton2Label">
+                <item>
+                 <widget class="QLabel" name="labelButton2Label">
+                  <property name="text">
+                   <string>标签：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditButton2Label"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayoutButton2Text">
+                <item>
+                 <widget class="QLabel" name="labelButton2Text">
+                  <property name="text">
+                   <string>内容：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditButton2Text"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QGroupBox" name="groupBoxButton3">
+             <property name="title">
+              <string>按钮3</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayoutButton3Label">
+                <item>
+                 <widget class="QLabel" name="labelButton3Label">
+                  <property name="text">
+                   <string>标签：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditButton3Label"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayoutButton3Text">
+                <item>
+                 <widget class="QLabel" name="labelButton3Text">
+                  <property name="text">
+                   <string>内容：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditButton3Text"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QGroupBox" name="groupBoxButton4">
+             <property name="title">
+              <string>按钮4</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayoutButton4Label">
+                <item>
+                 <widget class="QLabel" name="labelButton4Label">
+                  <property name="text">
+                   <string>标签：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditButton4Label"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayoutButton4Text">
+                <item>
+                 <widget class="QLabel" name="labelButton4Text">
+                  <property name="text">
+                   <string>内容：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditButton4Text"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QGroupBox" name="groupBoxButton5">
+             <property name="title">
+              <string>按钮5</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayoutButton5Label">
+                <item>
+                 <widget class="QLabel" name="labelButton5Label">
+                  <property name="text">
+                   <string>标签：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditButton5Label"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayoutButton5Text">
+                <item>
+                 <widget class="QLabel" name="labelButton5Text">
+                  <property name="text">
+                   <string>内容：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditButton5Text"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QGroupBox" name="groupBoxButton6">
+             <property name="title">
+              <string>按钮6</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayoutButton6Label">
+                <item>
+                 <widget class="QLabel" name="labelButton6Label">
+                  <property name="text">
+                   <string>标签：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditButton6Label"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayoutButton6Text">
+                <item>
+                 <widget class="QLabel" name="labelButton6Text">
+                  <property name="text">
+                   <string>内容：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEditButton6Text"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutButtons">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonYes">
+        <property name="text">
+         <string>确定(&amp;Y)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonNo">
+        <property name="text">
+         <string>取消(&amp;C)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonApply">
+        <property name="text">
+         <string>应用(&amp;A)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -2,6 +2,10 @@
     <qresource prefix="/icons">
         <file>res/icons/icon32.ico</file>
         <file>res/icons/icon64.ico</file>
+        <file>res/icons/obs-studio.ico</file>
+        <file>res/icons/blivechat.ico</file>
+        <file>res/icons/danmuji.ico</file>
+        <file>res/icons/icon128.ico</file>
     </qresource>
     <qresource prefix="/StartWindow">
         <file>res/StartWindow/StartWindowPic.jpg</file>
@@ -13,5 +17,8 @@
         <file>res/MainWindow/Actions/video-stream.ico</file>
         <file>res/MainWindow/Actions/pause.ico</file>
         <file>res/MainWindow/Actions/play.ico</file>
+        <file>res/MainWindow/Actions/message.ico</file>
+        <file>res/MainWindow/Actions/settings.ico</file>
+        <file>res/MainWindow/Actions/help.ico</file>
     </qresource>
 </RCC>
